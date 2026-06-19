@@ -253,7 +253,28 @@
     .sdetail { font-size: 0.75rem; color: var(--ink-muted); margin-bottom: 1px; font-weight: 400; }
 
     /* FOOTER */
-    footer { border-top: 1px solid var(--border); text-align: center; padding: 28px 6%; font-size: 0.85rem; color: var(--ink-faint); }
+    /* footer { border-top: 1px solid var(--border); text-align: center; padding: 28px 6%; font-size: 0.85rem; color: var(--ink-faint); } */
+
+    footer {
+  border-top: 1px solid var(--border);
+  text-align: center;
+  padding: 28px 6%;
+  font-size: 0.85rem;
+  color: var(--ink-faint);
+}
+
+.footer-name {
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+.footer-dot {
+  color: #FFD700;
+}
+
+.footer-role {
+  color: var(--ink-faint);
+}
 
     /* RESPONSIVE */
     @media (max-width: 780px) {
@@ -516,8 +537,13 @@
   </div>
 </section>
 
+
+
 <footer>
-  <p>Designed &amp; Developed by <strong style="color:var(--ink)">Abishek S R </strong> • Full Stack Developer </p>
+  Designed & Developed by
+  <span class="footer-name">Abishek S R</span>
+  <span class="footer-dot">•</span>
+  <span class="footer-role">Full Stack Developer</span>
 </footer>
 
 </body>
