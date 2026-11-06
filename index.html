@@ -3,277 +3,1188 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Portfolio of Abishek S R — Full Stack Developer specializing in Java, Spring Boot, REST APIs, MySQL, and modern responsive web applications."/>
+  <meta name="keywords" content="Abishek S R, Full Stack Developer, Java Developer, Spring Boot, Portfolio, Software Engineer, Web Development, MySQL"/>
+  <meta name="author" content="Abishek S R"/>
+  <meta name="theme-color" content="#070b14"/>
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Abishek S R — Full Stack Developer"/>
+  <meta property="og:description" content="I build responsive, scalable and user-friendly web applications using modern frontend and backend technologies."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="images/AH-4118.jpg"/>
+
   <title>Abishek S R — Full Stack Developer</title>
+
+  <!-- Google Fonts: Inter & Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
   <link rel="stylesheet" href="style.css">
-  <style>
-   
-  </style>
 </head>
 <body>
 
-<!-- NAV -->
-<nav>
-  <a href="#hero" class="nav-logo"><div class="nav-dot"></div> Abishek S R</a>
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
-
-<!-- HERO -->
-<section id="hero">
-  <div class="hero-grid"></div>
-  <div class="hero-glow"></div>
-  <div class="hero-content">
-    <div class="greeting">👋 Hello, World!</div>
-    <h1>Hi, I'm <span class="name">Abishek S R</span><br>Full Stack Developer</h1>
-    <p class="hero-role">
-      Web Developer <span class="dot"></span>
-      Problem Solver <span class="dot"></span>
-      Lifelong Learner
-    </p>
-    <p class="hero-bio">
-      A passionate developer at the beginning of my journey. I build real-world web applications that solve everyday problems — and I'm just getting started.
-    </p>
-    <div class="hero-cta">
-      <a href="#projects" class="btn-primary">See My Work</a>
-      <a href="#contact" class="btn-ghost">Hire Me</a>
-    </div>
-    <div class="hero-note">
-      <div class="hero-note-icon">🌱</div>
-      <p><strong>Fresher &amp; ready to grow.</strong> Strong fundamentals and genuine enthusiasm for every line of code I write.</p>
-    </div>
+  <!-- Ambient Glowing Background Elements -->
+  <div class="bg-ambient-wrapper" aria-hidden="true">
+    <div class="ambient-grid"></div>
+    <div class="ambient-orb ambient-orb-1"></div>
+    <div class="ambient-orb ambient-orb-2"></div>
+    <div class="ambient-orb ambient-orb-3"></div>
   </div>
-</section>
 
-<!-- ABOUT -->
-<section id="about">
-  <div class="sec-eyebrow">Who I am</div>
-  <h2>About Me</h2>
-  <div class="about-wrap">
-    <div class="about-card">
-      <div class="avatar">
-        <img src="images/AH-4118.jpg" alt="Abishek S R"
-          onerror="this.outerHTML='<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 200 200\' width=\'100%\' height=\'100%\'><rect width=\'200\' height=\'200\' fill=\'#141d2e\'/><circle cx=\'100\' cy=\'78\' r=\'36\' fill=\'#1c2d46\'/><ellipse cx=\'100\' cy=\'162\' rx=\'56\' ry=\'40\' fill=\'#1c2d46\'/></svg>'"
-        />
-      </div>
-      <div>
-        <h3>Abishek S R</h3>
-        <div class="title">Full Stack Developer</div>
-        <div class="location">📍Marthandam, Tamil Nadu, India</div>
-      </div>
-      <div class="status-pill"><span></span> Open to Work</div>
-    </div>
+  <!-- NAVIGATION BAR -->
+  <header>
+    <nav class="navbar" id="navbar">
+      <div class="container nav-container">
+        <!-- Logo -->
+        <a href="#hero" class="nav-brand" aria-label="Abishek S R Home">
+          <span class="brand-badge">&lt;/&gt;</span>
+          <span>Abishek S R</spav>
+        </a>
 
-    <div class="about-right">
-      <p>Hi, I'm <strong>Abishek S R</strong>, a passionate <strong>Java Full Stack Developer</strong> who has completed a Full Stack Development course and gained hands-on experience in building web applications.</p>
-      <p>I am a fresher developer interested in creating modern, responsive, and user-friendly web solutions. I completed my degree in<strong> Physical Education</strong> and transitioned into software development by learning modern technologies and building real-world projects.</p>
-      <p>I have developed projects that solve practical problems, including an<strong> educational website</strong> to support online learning and a <strong>job portal </strong>application to connect job seekers with employers. Through these projects, I gained experience in frontend development, backend development, and database management.</p>
-      <p>I am eager to start my career in software development, contribute my skills to a team, continuously learn new technologies, and work on meaningful products.</p>
-      <div class="about-highlights">
-        <div class="highlight-item">
-          <span class="icon">🎓</span>
-          <div><div class="label">Education</div><div class="value">BSc Physical Education</div></div>
-        </div>
-        <div class="highlight-item">
-          <span class="icon">💼</span>
-          <div><div class="label">Experience</div><div class="value">Fresher (0 yrs)</div></div>
-        </div>
-        <div class="highlight-item">
-          <span class="icon">🚀</span>
-          <div><div class="label">Projects Built</div><div class="value">2 Projects</div></div>
-        </div>
-        <div class="highlight-item">
-          <span class="icon">🌐</span>
-          <div><div class="label">Availability</div><div class="value">Immediate</div></div>
+        <!-- Desktop Navigation Links -->
+        <ul class="desktop-nav">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Nav Action Button -->
+        <div class="nav-actions">
+          <a href="files/Abishek_S_R.pdf" target="_blank" rel="noopener" class="btn btn-secondary nav-resume-btn" download>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span>Resume</span>
+          </a>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </nav>
 
-<!-- SKILLS -->
-<section id="skills">
-  <div class="sec-eyebrow">What I know</div>
-  <h2>My Skills</h2>
-  <div class="skills-container">
-
-    <div class="skill-row">
-      <div class="skill-row-label"><span>HTML &amp; CSS</span><span>Confident</span></div>
-      <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:85%"></div></div>
-    </div>
-
-     <div class="skill-row">
-      <div class="skill-row-label"><span>Spring Boot</span><span>Confident</span></div>
-      <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:80%"></div></div>
-    </div>
-
-    <div class="skill-row">
-      <div class="skill-row-label"><span>Java</span><span>Comfortable</span></div>
-      <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:75%"></div></div>
-    </div>
-
-    <div class="skill-row">
-      <div class="skill-row-label"><span>JavaScript</span><span>Comfortable</span></div>
-      <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:72%"></div></div>
-    </div>
-    
-    <div class="skill-row">
-      <div class="skill-row-label"><span>MySQL</span><span>Comfortable</span></div>
-      <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:70%"></div></div>
-    </div>
-    
-   
-     <div class="skill-row">
-      <div class="skill-row-label"><span>Bootstrap</span><span>Comfortable</span></div>
-      <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:70%"></div></div>
-    </div>
-
-    <div class="skill-row">
-      <div class="skill-row-label"><span>React.js</span><span>Learning</span></div>
-      <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:60%"></div></div>
-    </div>
-
-  </div>
-  <div class="skill-tags-wrap">
-    <span class="stag">Git &amp; GitHub</span>
-    <span class="stag">REST APIs</span>
-    <span class="stag">VS Code</span>
-    <span class="stag">Intellij IDEA</span>
-  </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects">
-  <div class="sec-eyebrow">What I've built</div>
-  <h2>My Projects</h2>
-  <div class="projects-grid">
-
-    <div class="proj-card">
-      <div class="proj-banner" style="background: linear-gradient(135deg, #162040 0%, #0d1525 100%);">
-        <div class="proj-banner-pattern"></div>
-        <div class="proj-banner-icon">📚</div>
-      </div>
-      <div class="proj-body">
-        <div class="proj-num">Project 01</div>
-        <h3>Educational Website</h3>
-        <p>An online learning platform where students can browse courses, watch lessons, and track their progress.</p>
-        <div class="proj-features">
-          <span class="proj-feature">Built an online educational website using Java</span>
-          <span class="proj-feature">Added user registration &amp; login system</span>
-          <span class="proj-feature">Course listing with categories</span>
-          <span class="proj-feature">Progress tracking dashboard</span>
-          <span class="proj-feature">Used Spring Boot &amp; MySQL for backend</span>
-          <span class="proj-feature">Designed UI using HTML, CSS, Bootstrap</span>
-        </div>
-        <div class="proj-footer">
-          <span class="proj-tag">HTML/CSS</span>
-          <span class="proj-tag">JavaScript</span>
-          <span class="proj-tag">Java</span>
-          <span class="proj-tag">MySQL</span>
-          <span class="proj-tag">Spring Boot</span>
-        </div>
-        <div class="proj-actions">
-          <!-- <a href="https://your-live-demo-link.com" target="_blank" rel="noopener" class="proj-btn proj-btn-solid">⚡ Live Demo</a> -->
-          <a href="https://github.com/Abishek7601/Project_Educational_website" target="_blank" rel="noopener" class="proj-btn proj-btn-outline">🐙 GitHub</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="proj-card">
-      <div class="proj-banner" style="background: linear-gradient(135deg, #0e2818 0%, #081610 100%);">
-        <div class="proj-banner-pattern"></div>
-        <div class="proj-banner-icon">💼</div>
-      </div>
-      <div class="proj-body">
-        <div class="proj-num">Project 02</div>
-        <h3>HireHub — Job Portal</h3>
-        <p>A full-stack job portal connecting job seekers with employers. Post jobs, apply, and manage profiles.</p>
-        <div class="proj-features">
-          <span class="proj-feature">Separate portals for seekers &amp; employers</span>
-          <span class="proj-feature">Job posting &amp; application system</span>
-         <span class="proj-feature">Used Spring Boot &amp; MySQL for backend</span>
-          <span class="proj-feature">Search &amp; filter jobs by category</span>
-          <span class="proj-feature">Built admin dashboard for managing jobs</span>
-           <span class="proj-feature">Designed UI using HTML, CSS</span>
-        </div>
-        <div class="proj-footer">
-          <span class="proj-tag">HTML/CSS</span>
-          <span class="proj-tag">JavaScript</span>
-          <span class="proj-tag">Java</span>
-          <span class="proj-tag">MySQL</span>
-          <span class="proj-tag">Spring Boot</span>
-        </div>
-        <div class="proj-actions">
-          <!-- <a href="https://your-live-demo-link.com" target="_blank" rel="noopener" class="proj-btn proj-btn-solid">⚡ Live Demo</a> -->
-          <a href="https://github.com/Abishek7601/Job-Portal-Project" target="_blank" rel="noopener" class="proj-btn proj-btn-outline">🐙 GitHub</a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-  <div class="sec-eyebrow">Get in touch</div>
-  <h2>Let's Connect</h2>
-  <div class="contact-inner">
-    <div class="contact-left">
-      <h3>Looking for my first opportunity 🚀</h3>
-      <p>I'm actively seeking entry-level or fresher roles in full stack development. If you're hiring or know someone who is, I'd love to have a conversation!</p>
-      <div class="contact-info">
-        <div class="cinfo">
-          <div class="cinfo-icon">✉️</div>
-          <a href="mailto:abisheksr680@gmail.com">abisheksr680@gmail.com</a>
-        </div>
-        <div class="cinfo">
-          <div class="cinfo-icon">📍</div>
-          <span>Marthandam, Tamil Nadu, India</span>
-        </div>
-        <div class="cinfo">
-          <div class="cinfo-icon">📄</div>
-          <a href="files/Abishek_S_R.pdf" target="_blank">Download Resume (PDF)</a>
-        </div>
-        <div class="cinfo">
-          <div class="cinfo-icon">📄</div>
-          <a href="files/Course Certificate.pdf" target="_blank">Course Certificate (PDF)</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="contact-right">
-      <a href="https://www.linkedin.com/in/abishek-s-r-b1b4963b7/" target="_blank" rel="noopener" class="social-btn">
-        <span class="sicon">🔗</span>
-        <div><div class="sdetail">Connect on</div>LinkedIn</div>
-        <span class="sarrow">→</span>
-      </a>
-      <a href="https://github.com/Abishek7601" target="_blank" rel="noopener" class="social-btn">
-        <span class="sicon">🐙</span>
-        <div><div class="sdetail">See my code on</div>GitHub</div>
-        <span class="sarrow">→</span>
-      </a>
-      <a href="https://wa.me/917092191231" target="_blank" rel="noopener" class="social-btn">
-        <span class="sicon">💬</span>
-        <div><div class="sdetail">Chat on</div>WhatsApp</div>
-        <span class="sarrow">→</span>
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#about" class="mobile-nav-link"><span>About</span> <span>→</span></a>
+      <a href="#experience" class="mobile-nav-link"><span>Experience</span> <span>→</span></a>
+      <a href="#skills" class="mobile-nav-link"><span>Skills</span> <span>→</span></a>
+      <a href="#projects" class="mobile-nav-link"><span>Projects</span> <span>→</span></a>
+      <a href="#education" class="mobile-nav-link"><span>Education</span> <span>→</span></a>
+      <a href="#contact" class="mobile-nav-link"><span>Contact</span> <span>→</span></a>
+      <a href="files/Abishek_S_R.pdf" target="_blank" rel="noopener" class="btn btn-primary" download style="margin-top: 10px;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 18px; height: 18px;">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <polyline points="7 10 12 15 17 10"></polyline>
+          <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+        Download Resume (PDF)
       </a>
     </div>
-  </div>
-</section>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero">
+      <div class="container">
+        <div class="hero-grid-layout">
+          <!-- Left Column: Introduction & CTAs -->
+          <div class="hero-content reveal-left is-revealed">
+            <div class="hero-badge-wrap">
+              <div class="hero-badge">
+                <span class="pulse-dot"></span>
+                <span>Open to Work • Immediate Availability</span>
+              </div>
+            </div>
+
+            <h1 class="hero-title">
+              Hi, I'm <span class="gradient-text">Abishek S R</span>
+            </h1>
+
+            <div class="hero-typewriter-wrap">
+              <span class="typewriter-prefix">I am a</span>
+              <span class="typing-text" id="typing-text">Full Stack Developer</span>
+            </div>
+
+            <p class="hero-bio">
+              I build responsive, scalable and user-friendly web applications using modern frontend and backend technologies.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#projects" class="btn btn-primary">
+                <span>View My Projects</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+
+              <a href="files/Abishek_S_R.pdf" target="_blank" rel="noopener" class="btn btn-secondary" download>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span>Download Resume</span>
+              </a>
+
+              <a href="#contact" class="btn btn-ghost">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span>Contact Me</span>
+              </a>
+            </div>
+
+            <div class="hero-highlights-strip">
+              <div class="strip-item">
+                <span class="strip-number">Spring Boot</span>
+                <span class="strip-label">Backend Architecture</span>
+              </div>
+              <div class="strip-item">
+                <span class="strip-number">MySQL &amp; REST</span>
+                <span class="strip-label">Database &amp; APIs</span>
+              </div>
+              <div class="strip-item">
+                <span class="strip-number">Clean Code</span>
+                <span class="strip-label">Responsive UI/UX</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Visual Developer Profile Card -->
+          <div class="hero-visual reveal-right is-revealed">
+            <div class="hero-card-container">
+              <!-- Floating Tech Badges -->
+              <div class="floating-badge floating-badge-top">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #60a5fa;">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+                <div>
+                  <div class="fbadge-title">Backend</div>
+                  <div class="fbadge-value">Java &amp; Spring Boot</div>
+                </div>
+              </div>
+
+              <!-- <div class="floating-badge floating-badge-bottom">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #10b981;">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+                <div>
+                  <div class="fbadge-title">Database</div>
+                  <div class="fbadge-value">MySQL &amp; Relational Data</div>
+                </div>
+              </div> -->
+
+              <!-- Profile Glass Card -->
+              <div class="profile-card-glass">
+                <div class="profile-image-wrapper">
+                  <img src="images/AH-4118.jpg" alt="Abishek S R - Full Stack Developer"
+                    onerror="this.outerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;background:#131c33;color:#60a5fa;font-size:2.5rem;font-weight:700;\'>ASR</div>'"
+                  />
+                </div>
+                <div class="profile-details">
+                  <h2 class="profile-name">Abishek S R</h2>
+                  <div class="profile-role">Full Stack Developer</div>
+                  <div class="profile-company-tag">
+                    <span class="pulse-dot"></span>
+                    <span>PL Softtech Solutions</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section id="about">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <div class="sec-eyebrow">Who I Am</div>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">
+            A developer dedicated to engineering reliable, secure, and intuitive web solutions that empower business workflows.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Text Introduction -->
+          <div class="about-text-content reveal-left">
+            <p>
+              Hi, I'm <strong>Abishek S R</strong>, a passionate <strong>Full Stack Developer</strong> specializing in <strong>Java</strong>, <strong>Spring Boot</strong>, and modern frontend technologies. I focus on developing clean, well-architected, and scalable applications that solve everyday business problems.
+            </p>
+            <p>
+              I completed my degree in <strong>B.Sc. Physical Education</strong> from Nesamony Memorial Christian College, which instilled in me discipline, structured thinking, resilience, and teamwork. Driven by a deep passion for technology and software architecture, I transitioned into software development, successfully completing comprehensive <strong>Java Full Stack Development</strong> training at Scope India.
+            </p>
+            <p>
+              I take pride in building real-world enterprise applications, including dynamic quotation management systems with role-based access control, interactive educational platforms, and job portals. My technical interests revolve around designing efficient RESTful APIs, relational database schema optimization with MySQL, and responsive user interfaces that deliver exceptional user experiences.
+            </p>
+            <p>
+              Currently, I work as a <strong>Full Stack Developer at PL Softtech Solutions</strong>, where I develop enterprise applications, integrate frontend with backend micro-services, and build secure authentication workflows.
+            </p>
+
+            <div class="about-callout">
+              <strong>Eager to contribute:</strong> Open to challenging full-stack opportunities where I can apply my Java/Spring Boot expertise, build impactful features, and grow alongside forward-thinking teams.
+            </div>
+          </div>
+
+          <!-- Highlight Metric Cards -->
+          <div class="about-cards-grid reveal-right">
+            <div class="about-stat-card">
+              <div class="stat-icon-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+              </div>
+              <div class="stat-label">Current Role</div>
+              <div class="stat-title">Full Stack Developer</div>
+              <div class="stat-desc">PL Softtech Solutions (July 2026 – Present)</div>
+            </div>
+
+            <div class="about-stat-card">
+              <div class="stat-icon-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <div class="stat-label">Education &amp; Certification</div>
+              <div class="stat-title">B.Sc.Physical Education </div>
+              <div class="stat-desc">NMCC, Marthandam (CGPA 7.00) </div>
+            </div>
+
+                        <div class="about-stat-card">
+              <div class="stat-icon-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <div class="stat-label">Certification</div>
+              <div class="stat-title"> Java Full Stack Development</div>
+              <div class="stat-desc"> Scope India, Thiruvanathapuram</div>
+            </div>
+
+            <div class="about-stat-card">
+              <div class="stat-icon-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </div>
+              <div class="stat-label">Featured Projects</div>
+              <div class="stat-title">3+ Web Applications</div>
+              <div class="stat-desc">Enterprise Quotation, Job Portal &amp; E-Learning</div>
+            </div>
+
+            <!-- <div class="about-stat-card">
+              <div class="stat-icon-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </div>
+              <div class="stat-label">Location &amp; Availability</div>
+              <div class="stat-title">Marthandam, TN, India</div>
+              <div class="stat-desc">Open for Remote &amp; Onsite Opportunities</div>
+            </div> -->
 
 
+          </div>
+        </div>
+      </div>
+    </section>
 
-<footer>
-  Designed & Developed by
-  <span class="footer-name">Abishek S R</span>
-  <span class="footer-dot">•</span>
-  <span class="footer-role">Full Stack Developer</span>
-</footer>
+    <!-- PROFESSIONAL EXPERIENCE SECTION -->
+    <section id="experience">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <div class="sec-eyebrow">Work History</div>
+          <h2 class="section-title">Professional Experience</h2>
+          <p class="section-subtitle">
+            Hands-on enterprise application development delivering scalable full stack systems.
+          </p>
+        </div>
 
+        <div class="timeline-wrapper">
+          <div class="timeline-item reveal-up">
+            <div class="timeline-marker"></div>
+            <div class="experience-card">
+              <div class="experience-header">
+                <div class="exp-role-wrap">
+                  <h3>Full Stack Developer</h3>
+                  <div class="exp-company">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 18px; height: 18px;">
+                      <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                    <span>PL Softtech Solutions</span>
+                  </div>
+                </div>
+                <div class="exp-badge-duration">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 15px; height: 15px;">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  <span>July 2026 – Present</span>
+                </div>
+              </div>
+
+              <p class="exp-summary">
+                Responsible for designing, developing, and maintaining enterprise web applications, building scalable Java and Spring Boot backends, and crafting responsive frontend user interfaces.
+              </p>
+
+              <ul class="exp-responsibilities">
+                <li class="exp-resp-item">
+                  <span class="exp-bullet-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </span>
+                  <span><strong>Full Stack Application Development:</strong> Architecting and maintaining modular, maintainable web applications across client-side and server-side components.</span>
+                </li>
+
+                <li class="exp-resp-item">
+                  <span class="exp-bullet-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </span>
+                  <span><strong>Java &amp; Spring Boot Development:</strong> Building resilient backend business logic, controllers, JPA entity mappings, and RESTful service layers.</span>
+                </li>
+
+                <li class="exp-resp-item">
+                  <span class="exp-bullet-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </span>
+                  <span><strong>Frontend &amp; Backend Integration:</strong> Seamlessly connecting asynchronous client-side templates and forms with REST APIs and JSON endpoints.</span>
+                </li>
+
+                <li class="exp-resp-item">
+                  <span class="exp-bullet-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </span>
+                  <span><strong>Database Management with MySQL:</strong> Structuring normalized relational schemas, designing queries with optimal indexing, and maintaining ACID compliance.</span>
+                </li>
+
+                <li class="exp-resp-item">
+                  <span class="exp-bullet-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </span>
+                  <span><strong>Responsive UI Development:</strong> Designing modern, mobile-friendly interfaces that render consistently across desktop, tablet, and mobile browsers.</span>
+                </li>
+
+                <li class="exp-resp-item">
+                  <span class="exp-bullet-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </span>
+                  <span><strong>Authentication &amp; Role-Based Workflows:</strong> Implementing secure user authentication, password encryption, and multi-tier role-based access control (RBAC).</span>
+                </li>
+              </ul>
+
+              <div class="exp-tech-tags">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Spring Boot</span>
+                <span class="tech-tag">Spring Security</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">REST APIs</span>
+                <span class="tech-tag">HTML5 &amp; CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Git / GitHub</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS SECTION -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <div class="sec-eyebrow">Tech Stack &amp; Skills</div>
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-subtitle">
+            Core technologies and developer tools I utilize to craft full-stack web applications.
+          </p>
+        </div>
+
+        <!-- Category Filter Tabs -->
+        <div class="skills-filter-nav reveal-up">
+          <button class="skills-category-tab active" data-filter="all">All Skills</button>
+          <button class="skills-category-tab" data-filter="programming">Programming</button>
+          <button class="skills-category-tab" data-filter="backend">Backend</button>
+          <button class="skills-category-tab" data-filter="frontend">Frontend</button>
+          <!-- <button class="skills-category-tab" data-filter="database">Database</button> -->
+          <button class="skills-category-tab" data-filter="tools">Tools</button>
+        </div>
+
+        <div class="skills-cards-grid">
+          <!-- 1. Programming Languages -->
+          <div class="skill-category-card reveal-up delay-1" data-category="programming">
+            <div class="skill-card-top">
+              <div class="skill-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3>Programming</h3>
+            </div>
+            <div class="skill-card-body">
+              <div class="skill-progress-item">
+                <div class="skill-meta">
+                  <span class="skill-name">Java</span>
+                  <span class="skill-level-text">Proficient • 80%</span>
+                </div>
+                <div class="skill-progress-track">
+                  <div class="skill-progress-fill" data-level="80%"></div>
+                </div>
+              </div>
+
+              <div class="skill-progress-item">
+                <div class="skill-meta">
+                  <span class="skill-name">JavaScript</span>
+                  <span class="skill-level-text">Comfortable • 75%</span>
+                </div>
+                <div class="skill-progress-track">
+                  <div class="skill-progress-fill" data-level="75%"></div>
+                </div>
+              </div>
+
+              <div class="skill-progress-item">
+                <div class="skill-meta">
+                  <span class="skill-name">SQL</span>
+                  <span class="skill-level-text">Confident • 75%</span>
+                </div>
+                <div class="skill-progress-track">
+                  <div class="skill-progress-fill" data-level="75%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Backend Technologies -->
+          <div class="skill-category-card reveal-up delay-2" data-category="backend">
+            <div class="skill-card-top">
+              <div class="skill-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                </svg>
+              </div>
+              <h3>Backend</h3>
+            </div>
+            <div class="skill-card-body">
+              <div class="skill-progress-item">
+                <div class="skill-meta">
+                  <span class="skill-name">Java</span>
+                  <span class="skill-level-text">Core &amp; OOP • 80%</span>
+                </div>
+                <div class="skill-progress-track">
+                  <div class="skill-progress-fill" data-level="80%"></div>
+                </div>
+              </div>
+
+              <div class="skill-progress-item">
+                <div class="skill-meta">
+                  <span class="skill-name">Spring Boot</span>
+                  <span class="skill-level-text">Confident • 80%</span>
+                </div>
+                <div class="skill-progress-track">
+                  <div class="skill-progress-fill" data-level="80%"></div>
+                </div>
+              </div>
+
+              <div class="skill-progress-item">
+                <div class="skill-meta">
+                  <span class="skill-name">Spring Security</span>
+                  <span class="skill-level-text">Role-Based RBAC • 70%</span>
+                </div>
+                <div class="skill-progress-track">
+                  <div class="skill-progress-fill" data-level="70%"></div>
+                </div>
+              </div>
+
+              <div class="skill-progress-item">
+                <div class="skill-meta">
+                  <span class="skill-name">REST APIs</span>
+                  <span class="skill-level-text">Endpoints &amp; JSON • 70%</span>
+                </div>
+                <div class="skill-progress-track">
+                  <div class="skill-progress-fill" data-level="70%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Frontend Technologies -->
+          <div class="skill-category-card reveal-up delay-3" data-category="frontend">
+            <div class="skill-card-top">
+              <div class="skill-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="3" y1="9" x2="21" y2="9"></line>
+                  <line x1="9" y1="21" x2="9" y2="9"></line>
+                </svg>
+              </div>
+              <h3>Frontend</h3>
+            </div>
+            <div class="skill-card-body">
+              <div class="skill-progress-item">
+                <div class="skill-meta">
+                  <span class="skill-name">HTML5</span>
+                  <span class="skill-level-text">Semantic &amp; Modern • 80%</span>
+                </div>
+                <div class="skill-progress-track">
+                  <div class="skill-progress-fill" data-level="80%"></div>
+                </div>
+              </div>
+
+              <div class="skill-progress-item">
+                <div class="skill-meta">
+                  <span class="skill-name">CSS3</span>
+                  <span class="skill-level-text">Flexbox &amp; Grid • 85%</span>
+                </div>
+                <div class="skill-progress-track">
+                  <div class="skill-progress-fill" data-level="85%"></div>
+                </div>
+              </div>
+
+              <div class="skill-progress-item">
+                <div class="skill-meta">
+                  <span class="skill-name">Bootstrap</span>
+                  <span class="skill-level-text">Responsive UI • 65%</span>
+                </div>
+                <div class="skill-progress-track">
+                  <div class="skill-progress-fill" data-level="65%"></div>
+                </div>
+              </div>
+
+              <div class="skill-progress-item">
+                <div class="skill-meta">
+                  <span class="skill-name">React.js</span>
+                  <span class="skill-level-text">Components &amp; State • 65%</span>
+                </div>
+                <div class="skill-progress-track">
+                  <div class="skill-progress-fill" data-level="65%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Database Management -->
+          <!-- <div class="skill-category-card reveal-up delay-1" data-category="database">
+            <div class="skill-card-top">
+              <div class="skill-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <h3>Database</h3>
+            </div>
+            <div class="skill-card-body">
+              <div class="skill-progress-item">
+                <div class="skill-meta">
+                  <span class="skill-name">MySQL</span>
+                  <span class="skill-level-text">Relational Modeling • 80%</span>
+                </div>
+                <div class="skill-progress-track">
+                  <div class="skill-progress-fill" data-level="80%"></div>
+                </div>
+              </div>
+
+              <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6;">
+                Expertise in relational database schema design, normalization, ACID properties, foreign key constraints, joins, indexing, and Spring Data JPA integration.
+              </p>
+            </div>
+          </div> -->
+
+          <!-- 5. Developer Tools & Environments -->
+          <div class="skill-category-card reveal-up delay-2" data-category="tools">
+            <div class="skill-card-top">
+              <div class="skill-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
+              <h3>Developer Tools</h3>
+            </div>
+            <div class="skill-card-body">
+              <div class="tool-chips-grid">
+                <div class="tool-chip">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="6" y1="3" x2="6" y2="15"></line>
+                    <circle cx="18" cy="6" r="3"></circle>
+                    <circle cx="6" cy="18" r="3"></circle>
+                    <path d="M18 9a9 9 0 0 1-9 9"></path>
+                  </svg>
+                  <span>Git</span>
+                </div>
+
+                <div class="tool-chip">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  <span>GitHub</span>
+                </div>
+
+                <div class="tool-chip">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                  <span>VS Code</span>
+                </div>
+
+                <div class="tool-chip">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                    <path d="M9 9h6v6H9z"></path>
+                  </svg>
+                  <span>IntelliJ IDEA</span>
+                </div>
+
+                <!-- <div class="tool-chip">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M8 12h8"></path>
+                  </svg>
+                  <span>Eclipse</span>
+                </div> -->
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <div class="sec-eyebrow">Portfolio Work</div>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">
+            Real-world business systems and full-stack web applications developed with clean code.
+          </p>
+        </div>
+
+        <div class="projects-list">
+          <!-- Project 1: Pravin Kitchens & Interiors (Flagship) -->
+          <article class="project-card featured-primary reveal-up">
+            <div class="project-visual-preview">
+              <div class="project-preview-mockup">
+                <div class="mockup-header">
+                  <span class="mockup-dot red"></span>
+                  <span class="mockup-dot yellow"></span>
+                  <span class="mockup-dot green"></span>
+                  <span style="font-size: 0.72rem; color: var(--text-faint); margin-left: auto;">Quotation Management</span>
+                </div>
+                <div class="mockup-body-visual">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                    <polyline points="10 9 9 9 8 9"></polyline>
+                  </svg>
+                  <span class="mockup-body-caption">Enterprise Quotation Engine</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-details-pane">
+              <div>
+                <div class="project-category-badge">
+                  <span>⭐ Flagship Enterprise Application</span>
+                </div>
+                <h3 class="project-title">Pravin Kitchens &amp; Interiors – Quotation Management System</h3>
+                <p class="project-desc">
+                  A business-oriented quotation management application developed to streamline quotation creation, material pricing, and business operations.
+                </p>
+
+                <div class="project-features-list">
+                  <div class="proj-feat-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>Super Admin and Employee modules with Role-Based Access Control (RBAC).</span>
+                  </div>
+                  <div class="proj-feat-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>OTP-based secure email verification for user authentication.</span>
+                  </div>
+                  <div class="proj-feat-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>Dynamic quotation creation with branch-specific material pricing.</span>
+                  </div>
+                  <div class="proj-feat-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>Automated quotation calculations &amp; PDF generation with material specs and images.</span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="project-tech-stack">
+                  <span class="tech-tag">Java</span>
+                  <span class="tech-tag">Spring Boot</span>
+                  <span class="tech-tag">Spring Security</span>
+                  <span class="tech-tag">Thymeleaf</span>
+                  <span class="tech-tag">HTML5 / CSS3</span>
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">Bootstrap</span>
+                  <span class="tech-tag">MySQL</span>
+                </div>
+
+                <div class="project-actions-row">
+                  <span class="status-pill">
+                    <span class="pulse-dot"></span>
+                    <span>Enterprise System</span>
+                  </span>
+                  <a href="#contact" class="btn btn-secondary btn-sm">
+                    <span>Inquire About Project</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Educational Website -->
+          <article class="project-card reveal-up">
+            <div class="project-visual-preview">
+              <div class="project-preview-mockup">
+                <div class="mockup-header">
+                  <span class="mockup-dot red"></span>
+                  <span class="mockup-dot yellow"></span>
+                  <span class="mockup-dot green"></span>
+                  <span style="font-size: 0.72rem; color: var(--text-faint); margin-left: auto;">E-Learning Portal</span>
+                </div>
+                <div class="mockup-body-visual">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                  </svg>
+                  <span class="mockup-body-caption">Online Learning Platform</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-details-pane">
+              <div>
+                <div class="project-category-badge">
+                  <span>E-Learning Web Application</span>
+                </div>
+                <h3 class="project-title">Educational Website</h3>
+                <p class="project-desc">
+                  An online learning platform where students can browse courses, watch lessons, and track their educational progress.
+                </p>
+
+                <div class="project-features-list">
+                  <div class="proj-feat-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>Built an online educational platform using Java and Spring Boot.</span>
+                  </div>
+                  <div class="proj-feat-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>User registration and authentication system.</span>
+                  </div>
+                  <div class="proj-feat-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>Course listing with categories and student progress tracking dashboard.</span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="project-tech-stack">
+                  <span class="tech-tag">Java</span>
+                  <span class="tech-tag">Spring Boot</span>
+                  <span class="tech-tag">MySQL</span>
+                  <span class="tech-tag">HTML5 &amp; CSS3</span>
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">Bootstrap</span>
+                </div>
+
+                <div class="project-actions-row">
+                  <a href="https://github.com/Abishek7601/Project_Educational_website" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                    <span>GitHub Code</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: HireHub — Job Portal -->
+          <article class="project-card reveal-up">
+            <div class="project-visual-preview">
+              <div class="project-preview-mockup">
+                <div class="mockup-header">
+                  <span class="mockup-dot red"></span>
+                  <span class="mockup-dot yellow"></span>
+                  <span class="mockup-dot green"></span>
+                  <span style="font-size: 0.72rem; color: var(--text-faint); margin-left: auto;">Recruitment Platform</span>
+                </div>
+                <div class="mockup-body-visual">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                  </svg>
+                  <span class="mockup-body-caption">Job Portal Platform</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-details-pane">
+              <div>
+                <div class="project-category-badge">
+                  <span>Recruitment Portal Application</span>
+                </div>
+                <h3 class="project-title">HireHub — Job Portal</h3>
+                <p class="project-desc">
+                  A full-stack job portal connecting job seekers with employers. Post jobs, apply, and manage profiles seamlessly.
+                </p>
+
+                <div class="project-features-list">
+                  <div class="proj-feat-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>Separate portals for job seekers &amp; hiring employers.</span>
+                  </div>
+                  <div class="proj-feat-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>Job posting, search &amp; filter by category, and application tracking.</span>
+                  </div>
+                  <div class="proj-feat-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>Admin dashboard for managing listings, applicants, and system users.</span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="project-tech-stack">
+                  <span class="tech-tag">Java</span>
+                  <span class="tech-tag">Spring Boot</span>
+                  <span class="tech-tag">MySQL</span>
+                  <span class="tech-tag">HTML5 &amp; CSS3</span>
+                  <span class="tech-tag">JavaScript</span>
+                </div>
+
+                <div class="project-actions-row">
+                  <a href="https://github.com/Abishek7601/Job-Portal-Project" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                    <span>GitHub Code</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION & CERTIFICATIONS SECTION -->
+    <section id="education">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <div class="sec-eyebrow">Academic &amp; Credentials</div>
+          <h2 class="section-title">Education &amp; Certifications</h2>
+          <p class="section-subtitle">
+            Formal education and specialized professional training in full-stack software development.
+          </p>
+        </div>
+
+        <div class="edu-cert-grid">
+          <!-- Education Card -->
+          <div class="credential-card reveal-left">
+            <div class="cred-header">
+              <div class="cred-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <span class="cred-year-badge">2022 – 2025</span>
+            </div>
+
+            <h3 class="cred-title">B.Sc. Physical Education</h3>
+            <div class="cred-institution">Nesamony Memorial Christian College</div>
+
+            <div class="cred-score-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 14px; height: 14px;">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>CGPA: 7.00 / 10.0</span>
+            </div>
+
+            <p class="cred-desc">
+              Graduated with strong foundations in physical discipline, communication, and systematic problem solving. Transitioned into software engineering with high drive and rapid technical learning capabilities.
+            </p>
+          </div>
+
+          <!-- Certification Card -->
+          <div class="credential-card reveal-right">
+            <div class="cred-header">
+              <div class="cred-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 15l-2 5l9-11h-7l2-5l-9 11h7z"></path>
+                </svg>
+              </div>
+              <span class="cred-year-badge">2026</span>
+            </div>
+
+            <h3 class="cred-title">Java Full Stack Development</h3>
+            <div class="cred-institution">Scope India</div>
+
+            <div class="cred-score-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 14px; height: 14px;">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Verified Certificate</span>
+            </div>
+
+            <p class="cred-desc">
+              Extensive professional full-stack training covering Java, Spring Boot, Spring Security, Hibernate/JPA, RESTful API architecture, MySQL database design, HTML5, CSS3, JavaScript, and modern web application development.
+            </p>
+
+            <div class="cred-action">
+              <a href="files/Course Certificate.pdf" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                </svg>
+                <span>View Certificate (PDF)</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <div class="sec-eyebrow">Start A Conversation</div>
+          <h2 class="section-title">Let's Connect</h2>
+          <p class="section-subtitle">
+            Whether you have an opportunity, a project to discuss, or just want to say hi, I look forward to hearing from you!
+          </p>
+        </div>
+
+        <div class="contact-layout">
+          <!-- Left Column: Contact Details & Social Links -->
+          <div class="contact-info-panel reveal-left">
+            <div class="contact-direct-cards">
+              <!-- Email Card -->
+              <a href="mailto:abisheksr680@gmail.com" class="contact-card-item">
+                <div class="contact-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="contact-card-text">
+                  <span class="contact-label">Email Me</span>
+                  <span class="contact-value">abisheksr680@gmail.com</span>
+                </div>
+              </a>
+
+              <!-- Location Card -->
+              <div class="contact-card-item">
+                <div class="contact-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="contact-card-text">
+                  <span class="contact-label">Location</span>
+                  <span class="contact-value">Marthandam, Tamil Nadu, India</span>
+                </div>
+              </div>
+
+              <!-- Resume Download Card -->
+              <a href="files/Abishek_S_R.pdf" target="_blank" rel="noopener" class="contact-card-item" download>
+                <div class="contact-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                  </svg>
+                </div>
+                <div class="contact-card-text">
+                  <span class="contact-label">Resume</span>
+                  <span class="contact-value">Download Abishek_S_R.pdf</span>
+                </div>
+              </a>
+            </div>
+
+            <!-- Social Links -->
+            <div class="contact-social-pills">
+              <a href="https://www.linkedin.com/in/abishek-s-r-b1b4963b7/" target="_blank" rel="noopener" class="social-pill-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+                <div>
+                  <div style="font-size: 0.74rem; color: var(--text-faint); font-weight: 500;">Professional Profile</div>
+                  <span>Connect on LinkedIn</span>
+                </div>
+                <span class="social-arrow">→</span>
+              </a>
+
+              <a href="https://github.com/Abishek7601" target="_blank" rel="noopener" class="social-pill-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+                <div>
+                  <div style="font-size: 0.74rem; color: var(--text-faint); font-weight: 500;">Source Code &amp; Projects</div>
+                  <span>View Code on GitHub</span>
+                </div>
+                <span class="social-arrow">→</span>
+              </a>
+
+              <a href="https://wa.me/917092191231" target="_blank" rel="noopener" class="social-pill-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                </svg>
+                <div>
+                  <div style="font-size: 0.74rem; color: var(--text-faint); font-weight: 500;">Quick Chat</div>
+                  <span>Message on WhatsApp</span>
+                </div>
+                <span class="social-arrow">→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Contact Form UI -->
+          <div class="contact-form-pane reveal-right">
+            <div class="form-header">
+              <h3>Send Me a Message</h3>
+              <p>Fill out the form below and I will get back to you promptly.</p>
+            </div>
+
+            <form id="contact-form" name="contact" method="POST" data-netlify="true" autocomplete="on">
+              <div class="form-group-row">
+                <div class="form-group">
+                  <label for="contact-name" class="form-label">Your Name *</label>
+                  <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. John Doe" required autocomplete="name"/>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-email" class="form-label">Your Email *</label>
+                  <input type="email" id="contact-email" name="email" class="form-input" placeholder="e.g. john@example.com" required autocomplete="email"/>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Subject *</label>
+                <input type="text" id="contact-subject" name="subject" class="form-input" placeholder="e.g. Full Stack Developer Opportunity" required/>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Message *</label>
+                <textarea id="contact-message" name="message" class="form-textarea" placeholder="Tell me about your project, role, or inquiry..." required></textarea>
+              </div>
+
+              <button type="submit" id="contact-submit-btn" class="btn btn-primary" style="width: 100%;">
+                <span>Send Message</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-copy">
+        Designed &amp; Developed by
+        <span class="footer-name">Abishek S R</span>
+        <span class="footer-dot">•</span>
+        <span class="footer-role">Full Stack Developer</span>
+      </div>
+
+      <!-- Back to Top Button -->
+      <a href="#hero" id="back-to-top" class="back-to-top" aria-label="Back to top of page">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Toast Notification element -->
+  <div id="toast-notification" class="toast-notification" role="alert" aria-live="polite"></div>
+
+  <!-- Vanilla JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>
