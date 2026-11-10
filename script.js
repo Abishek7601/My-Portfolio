@@ -103,8 +103,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const typingElement = document.getElementById('typing-text');
   const roles = [
     'Full Stack Developer',
-    'Backend Developer'
-   
+    'Java & Spring Boot Specialist',
+    'React.js & Backend Engineer',
+    'Web Application Specialist'
   ];
 
   if (typingElement) {
@@ -176,36 +177,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ==========================================================================
-     5. Skill Bars Fill Animation (IntersectionObserver)
-     ========================================================================== */
-  const skillBars = document.querySelectorAll('.skill-progress-fill');
-
-  if ('IntersectionObserver' in window && !prefersReducedMotion) {
-    const skillsObserver = new IntersectionObserver(
-      (entries, observer) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const bar = entry.target;
-            const targetWidth = bar.getAttribute('data-level') || '75%';
-            bar.style.width = targetWidth;
-            observer.unobserve(bar);
-          }
-        });
-      },
-      { threshold: 0.25 }
-    );
-
-    skillBars.forEach((bar) => skillsObserver.observe(bar));
-  } else {
-    // Fill immediately
-    skillBars.forEach((bar) => {
-      const targetWidth = bar.getAttribute('data-level') || '75%';
-      bar.style.width = targetWidth;
-    });
-  }
-
-  /* ==========================================================================
-     6. Smooth Scrolling for Anchor Links (with header offset)
+     5. Smooth Scrolling for Anchor Links (with header offset)
      ========================================================================== */
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener('click', function (e) {
@@ -232,7 +204,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /* ==========================================================================
-     7. Back to Top Button
+     6. Back to Top Button
      ========================================================================== */
   const backToTopBtn = document.getElementById('back-to-top');
 
@@ -257,7 +229,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ==========================================================================
-     8. Interactive Contact Form with Validation & Toast Notification
+     7. Interactive Contact Form with Validation & Netlify Submission / Mailto Fallback
      ========================================================================== */
   const contactForm = document.getElementById('contact-form');
   const toastNotification = document.getElementById('toast-notification');
@@ -273,7 +245,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setTimeout(() => {
       toastNotification.classList.remove('show');
-    }, 4500);
+    }, 5000);
   };
 
   if (contactForm) {
@@ -308,15 +280,36 @@ document.addEventListener('DOMContentLoaded', () => {
       submitBtn.disabled = true;
       submitBtn.innerHTML = `
         <span class="btn-spinner"></span>
-        <span>Preparing Message...</span>
+        <span>Sending Message...</span>
       `;
 
-      // Simulate clean handoff to mail client & reset
-      setTimeout(() => {
+      // Prepare form data for Netlify submission
+      const formData = new FormData(contactForm);
+      if (!formData.has('form-name')) {
+        formData.append('form-name', 'contact');
+      }
+
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(formData).toString()
+      })
+      .then((res) => {
         submitBtn.disabled = false;
         submitBtn.innerHTML = originalBtnText;
 
-        // Construct mailto link so user's message actually reaches Abishek
+        if (res.ok) {
+          showToast(`Thank you, ${name}! Your message has been sent successfully.`);
+          contactForm.reset();
+        } else {
+          throw new Error('Server returned ' + res.status);
+        }
+      })
+      .catch(() => {
+        // Fallback for local preview / offline / direct mail client handoff
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalBtnText;
+
         const mailtoUrl = `mailto:abisheksr680@gmail.com?subject=${encodeURIComponent(
           `[Portfolio Contact] ${subject} - From ${name}`
         )}&body=${encodeURIComponent(
@@ -324,16 +317,14 @@ document.addEventListener('DOMContentLoaded', () => {
         )}`;
 
         showToast(`Thank you, ${name}! Opening your email client to send...`);
-        contactForm.reset();
-
-        // Open mailto link
         window.location.href = mailtoUrl;
-      }, 700);
+        contactForm.reset();
+      });
     });
   }
 
   /* ==========================================================================
-     9. Interactive Skill Filter Tabs (Optional Enhancement)
+     8. Interactive Skill Filter Tabs
      ========================================================================== */
   const skillCategoryTabs = document.querySelectorAll('.skills-category-tab');
   const skillCards = document.querySelectorAll('.skill-category-card');
@@ -351,7 +342,7 @@ document.addEventListener('DOMContentLoaded', () => {
         skillCards.forEach((card) => {
           const category = card.getAttribute('data-category');
           if (filter === 'all' || category === filter) {
-            card.style.display = 'block';
+            card.style.display = 'flex';
             setTimeout(() => {
               card.style.opacity = '1';
               card.style.transform = 'translateY(0)';
@@ -368,4 +359,3 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
-
